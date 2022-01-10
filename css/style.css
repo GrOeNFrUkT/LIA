@@ -1,0 +1,139 @@
+body {
+    background-color: #4f6d65;
+    color: white;
+}
+.hero h1 {
+    font-family: 'Readex Pro';
+    text-align: center;
+}
+.hero img  {
+    display: block;
+    margin: auto;
+    padding-top: 10px;
+}
+.carousel {
+    width: 80%;
+    margin: auto;
+}
+.description {
+    margin-top: 20px;
+    text-align: center;
+    background-color: white;
+    border: 1px solid white;
+    border-radius: 10px;
+    color: #4f6d65;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+}
+.description p {
+    padding-top: 20px;
+}
+.business img {
+    display: block;
+    margin: auto;
+    padding-top: 50px;
+    max-width: 300px;
+}
+.business p {
+    margin-left: 15px;
+    margin-right: 15px;
+}
+.business a {
+    color: #4f6d65;
+}
+.business a:hover {
+    color: #1d332d;
+}
+.search {
+    position: relative;
+    box-shadow: 0 0 40px rgba(51, 51, 51, .1);
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.search input {
+    height: 44px;
+    text-indent: 25px;
+    border: 2px solid #d6d4d4
+}
+
+.search input:focus {
+    box-shadow: none;
+    border: 2px solid #1d332d
+}
+
+.search .fa-search {
+    position: absolute;
+    top: 20px;
+    left: 16px
+}
+
+.search button {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    height: 35px;
+    width: 80px;
+    padding: 0;
+    background: #4f6d65;
+}
+.footer {
+    text-align: center;
+}
+.footer a {
+    color: white;
+}
+.btn-primary {
+    background-color: #4f6d65;
+    color: white;
+}
+.modal-title {
+    color: #4f6d65;
+}
+.modal-body {
+    color: #4f6d65;
+}
+.modal-body a {
+    color: #4f6d65;
+}
+
+
+.rate {
+    height: 46px;
+    margin-bottom: 30px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    transform: rotate(180deg);
+}
+.rate:not(:checked) > input {
+    position:absolute;
+    top:-9999px;
+}
+.rate:not(:checked) > label {
+    float:right;
+    width:1em;
+    overflow:hidden;
+    white-space:nowrap;
+    cursor:pointer;
+    font-size:30px;
+    color:#ccc;
+    transform: rotate(35deg);
+}
+.rate:not(:checked) > label:before {
+    content: '★ ';
+}
+.rate > input:checked ~ label {
+    color: #ffc700;    
+}
+.rate:not(:checked) > label:hover,
+.rate:not(:checked) > label:hover ~ label {
+    color: #deb217;  
+}
+.rate > input:checked + label:hover,
+.rate > input:checked + label:hover ~ label,
+.rate > input:checked ~ label:hover,
+.rate > input:checked ~ label:hover ~ label,
+.rate > label:hover ~ input:checked ~ label {
+    color: #c59b08;
+}

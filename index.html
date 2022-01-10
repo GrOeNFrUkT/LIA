@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ängöl - Helt spårat!</title>
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" rel="stylesheet"/>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Readex+Pro">
+    <!-- MDB -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.10.1/mdb.min.css" rel="stylesheet"/>
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <script
+        src="https://code.jquery.com/jquery-3.6.0.js"
+        integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+        crossorigin="anonymous"></script>
+    <script> 
+        $(function(){
+          $("#pilsnermalt").load("assets/pilsnermalt.html"); 
+        });
+    </script> 
+
+    
+</head>
+<body>
+    <div class="container">
+        <div class="row height d-flex justify-content-center align-items-center">
+            <div class="col-md-8">
+                <div class="search"> <i class="fa fa-search"></i> <input type="text" class="form-control" placeholder="Sök efter andra produkter...""> <button class="btn btn-primary">Sök</button> </div>
+            </div>
+        </div>
+        <div class="hero">
+            <h1 contenteditable="true">Ängöl - Helt spårat!</h1>
+            <img src="img/bottle.png" alt="Ängöl - helt spårat!">
+        </div>
+        <div class="rate">
+            <input type="radio" id="star5" name="rate" value="5" />
+            <label for="star5" title="text">5 stars</label>
+            <input type="radio" id="star4" name="rate" value="4" />
+            <label for="star4" title="text">4 stars</label>
+            <input type="radio" id="star3" name="rate" value="3" />
+            <label for="star3" title="text">3 stars</label>
+            <input type="radio" id="star2" name="rate" value="2" />
+            <label for="star2" title="text">2 stars</label>
+            <input type="radio" id="star1" name="rate" value="1" />
+            <label for="star1" title="text">1 star</label>
+        </div>
+        <div class="description">
+            
+            <div>
+                <p>
+                    Vi berättar allt för dig om processen, för vi tror att du bryr dig, vi tror att du vill veta! <br><br> Denna öl är resultatet av ett samarbete mellan många aktörer i en obruten kedja: <b>Ullälva Gård</b> <i>(maltkorn)</i>, <b>Krongården</b> <i>(Humle)</i>, <b>Skira</b> <i>(handelsplattform för spannmål)</i> <b>Brewmaster</b> <i>(mälteri)</i>, <b>Ängöl</b> <i>(bryggeri)</i>, <b>Foodchain by Blockchain</b> <i>(spårbarhetssystemleverantör)</i> och <b>IBM</b> <i>(Food Trust)</i>.
+                </p>
+                <b>Volym:</b> 330 ml <br>
+                <b>Ingredienser:</b> Malt <i>(<a role="button" data-mdb-toggle="modal" data-mdb-target="#modal1">Pilsnermalt</a>, <a role="button" data-mdb-toggle="modal" data-mdb-target="#modal2">Karamellmalt</a>)</i>, Humle <i>(<a role="button" data-mdb-toggle="modal" data-mdb-target="#modal3">Saphir</a>, <a role="button" data-mdb-toggle="modal" data-mdb-target="#modal4">Magnum</a>)</i>, Jäst, Vatten.
+            </div>
+            <div class="business">
+                <a href="" target="_blank"><img src="img/angol-green.png" alt="Ängöl AB"></a>
+                <p>
+                    Grundades år 2010 av kalmariten Johan Håkansson som varit hembryggare sedan 1993. <br> Det var i en källare på Kattrumpan i Kalmar som allt startade. <br> Det var med brinnande intresse och passion han kastades in i den spännande branschen, vilket summerar vad som driver oss. <br> Våra öl är åt det klassiska hållet men med en hel del moderna toner som håller det intressant. <br> Vi är en mindre men stolt aktör med strävan att alltid brygga öl av bästa kvalité.
+                </p>
+                <h3><b>Ängöl AB</b></h3>
+                <a href="https://angol.se/" target="_blank">https://angol.se/</a> <br>
+                <a href="https://www.google.se/maps/place/Polhemsgatan+30,+392+39+Kalmar/@56.6728037,16.3244169,17z/data=!3m1!4b1!4m5!3m4!1s0x4657d190037cd7a7:0xcfcefb03c6846b42!8m2!3d56.6728008!4d16.3266057" target="_blank">Polhemsgatan 30, 392 39 Kalmar</a>
+                <iframe width="80%" height="300" style="border:0" loading="lazy" allowfullscreen src="https://www.google.com/maps/embed/v1/place?q=Polhemsgatan%2030%2C%20392%2039%20Kalmar&key=AIzaSyBLDyFOPpsLyfrS-GUmrZf-077txj1LIQA"></iframe> 
+            </div>
+        </div>
+        <div class="footer">
+            © 2021 <a href="https://foodchain.se/">Foodchain By Blockchain</a> <br> Alla rättigheter reserverade.
+        </div>
+    </div>
+<!-- Modal -->
+    <div id="pilsnermalt"></div>
+    <div id="karamellmalt"></div>
+    <div id="saphir"></div>
+    <div id="magnum"></div>
+
+
+
+    
+
+<!-- MDB -->
+<script
+type="text/javascript"
+src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.10.1/mdb.min.js"
+></script>
+</body>
+</html>
